@@ -20,12 +20,27 @@ namespace ConsoleApplication3
 
             if (double.TryParse(a, out a_value) && double.TryParse(b, out b_value))
             {
-                Console.WriteLine("Result: {0}", (a_value * b_value));
+                double result = substraction(a_value, b_value);
+                Console.WriteLine("Result: {0}", (result));
             }
             else
             {
-                Console.WriteLine("Not an integer!!");
+                Console.WriteLine("Not an valid number!!");
             }
+            Console.WriteLine("Press any key to exit");
+            Console.Read();
+        }
+
+        private static double substraction(double a, double b)
+        {
+            var result = a - b;
+            return result;
+        }
+
+        private static double multiply(double a, double b)
+        {
+            var result = a * b;
+            return result;
         }
     }
 }
