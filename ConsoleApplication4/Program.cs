@@ -33,7 +33,7 @@ namespace ConsoleApplication3
             Console.Read();
         }
 
-        private static double substraction(double a, double b);
+        private static double substraction(double a, double b)
         {
             var result = a - b;
             return result;
