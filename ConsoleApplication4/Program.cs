@@ -21,7 +21,9 @@ namespace ConsoleApplication3
             if (double.TryParse(a, out a_value) && double.TryParse(b, out b_value))
             {
                 double result = substraction(a_value, b_value);
-                Console.WriteLine("Result: {0}", (result));
+                double resultInPercent = substractionInPercent(result);
+                Console.WriteLine("Result: {0}", (resultInPercent));
+                Console.Read();
             }
             else
             {
@@ -34,6 +36,12 @@ namespace ConsoleApplication3
         private static double substraction(double a, double b)
         {
             var result = a - b;
+            return result;
+        }
+
+        private static double substractionInPercent(double substraction)
+        {
+            var result = substraction * 100;
             return result;
         }
 

@@ -1,2 +1,4 @@
 language: csharp
 solution: ConsoleApplication4.sln
+mono:
+  - latest
