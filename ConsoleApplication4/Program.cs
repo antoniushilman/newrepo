@@ -29,6 +29,7 @@ namespace ConsoleApplication3
             {
                 Console.WriteLine("Not an valid number!!");
             }
+            Console.WriteLine("This is a new one");
             Console.WriteLine("Press any key to exit");
             Console.Read();
         }
